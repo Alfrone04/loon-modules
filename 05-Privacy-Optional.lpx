@@ -1,0 +1,19 @@
+#!name = L1.0 05 隐私追踪（可选）
+#!desc = 默认不建议启用；只屏蔽有限的追踪域名
+#!author = Personal Loon Modular
+#!date = 2026-11-05
+#!tag = 隐私
+#!type = normal
+[Rule]
+# 默认关闭本插件。启用后可能影响某些 App 的统计和启动流程。
+DOMAIN-SUFFIX,app-measurement.com,REJECT
+DOMAIN-SUFFIX,adjust.com,REJECT
+DOMAIN-SUFFIX,appsflyer.com,REJECT
+DOMAIN-SUFFIX,branch.io,REJECT
+DOMAIN-SUFFIX,scorecardresearch.com,REJECT
+DOMAIN-SUFFIX,hotjar.com,REJECT
+DOMAIN-SUFFIX,segment.io,REJECT
+DOMAIN-SUFFIX,mixpanel.com,REJECT
+DOMAIN-SUFFIX,amplitude.com,REJECT
+DOMAIN-SUFFIX,taboola.com,REJECT
+DOMAIN-SUFFIX,outbrain.com,REJECT

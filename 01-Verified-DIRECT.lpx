@@ -1,0 +1,23 @@
+#!name = L1.0 01 已验证直连
+#!desc = UZ网盘/木偶/动漫共和国，严格使用已观察域名
+#!author = Personal Loon Modular
+#!date = 2026-11-05
+#!tag = 直连
+#!type = normal
+[Rule]
+# UZ/网盘和动漫共和国：不要被海外 FINAL、广告/隐私规则截走。
+DOMAIN-SUFFIX,alipan.com,DIRECT
+DOMAIN-SUFFIX,aliyundrive.com,DIRECT
+DOMAIN-SUFFIX,115.com,DIRECT
+DOMAIN-SUFFIX,123pan.com,DIRECT
+DOMAIN-SUFFIX,123pan.cn,DIRECT
+DOMAIN-SUFFIX,quark.cn,DIRECT
+DOMAIN-SUFFIX,weiyun.com,DIRECT
+DOMAIN-SUFFIX,lanzou.com,DIRECT
+DOMAIN-SUFFIX,lanzouj.com,DIRECT
+DOMAIN-SUFFIX,baidupcs.com,DIRECT
+DOMAIN-SUFFIX,666291.xyz,DIRECT
+DOMAIN-SUFFIX,333291.xyz,DIRECT
+DOMAIN-SUFFIX,muoua.top,DIRECT
+DOMAIN-SUFFIX,cenmo.fun,DIRECT
+DOMAIN,m3bkbfdm.hzhcbkj.cn,DIRECT

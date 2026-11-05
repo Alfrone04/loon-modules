@@ -1,0 +1,26 @@
+#!name = L1.0 03 国内直连
+#!desc = 中国 App、媒体和六大银行基础域名 DIRECT
+#!author = Personal Loon Modular
+#!date = 2026-11-05
+#!tag = 国内
+#!type = normal
+[Rule]
+# 常见中国业务域名；不包含海外 AI，避免误伤地区内容。
+DOMAIN-SUFFIX,qq.com,DIRECT
+DOMAIN-SUFFIX,tencent.com,DIRECT
+DOMAIN-SUFFIX,weixin.com,DIRECT
+DOMAIN-SUFFIX,taobao.com,DIRECT
+DOMAIN-SUFFIX,alipay.com,DIRECT
+DOMAIN-SUFFIX,jd.com,DIRECT
+DOMAIN-SUFFIX,baidu.com,DIRECT
+DOMAIN-SUFFIX,bilibili.com,DIRECT
+DOMAIN-SUFFIX,douyin.com,DIRECT
+DOMAIN-SUFFIX,xiaohongshu.com,DIRECT
+DOMAIN-SUFFIX,meituan.com,DIRECT
+DOMAIN-SUFFIX,163.com,DIRECT
+DOMAIN-SUFFIX,ccb.com,DIRECT
+DOMAIN-SUFFIX,abchina.com.cn,DIRECT
+DOMAIN-SUFFIX,psbc.com,DIRECT
+DOMAIN-SUFFIX,icbc.com.cn,DIRECT
+DOMAIN-SUFFIX,cmbchina.com,DIRECT
+DOMAIN-SUFFIX,boc.cn,DIRECT
