@@ -1,7 +1,7 @@
-#!name = L1.0 03 国内直连
-#!desc = 中国 App、媒体和六大银行基础域名 DIRECT
+#!name = L1.1 03 国内直连增强
+#!desc = 国产 App 主域名、登录/CDN 和高频 SDK 直连；减少误入 FINAL 代理
 #!author = Personal Loon Modular
-#!date = 2026-11-05
+#!date = 2026-11-08
 #!tag = 国内
 #!type = normal
 [Rule]
@@ -24,3 +24,58 @@ DOMAIN-SUFFIX,psbc.com,DIRECT
 DOMAIN-SUFFIX,icbc.com.cn,DIRECT
 DOMAIN-SUFFIX,cmbchina.com,DIRECT
 DOMAIN-SUFFIX,boc.cn,DIRECT
+
+# 国内 App 常把登录、消息、图片、统计和 CDN 放在另一套 .com/.net 域名下。
+# 仅覆盖已知中国业务基础域名，不粗暴直连整个 .com/.net。
+# 微信、QQ、腾讯、财付通及图片 CDN。
+DOMAIN-SUFFIX,wechatpay.cn,DIRECT
+DOMAIN-SUFFIX,qpic.cn,DIRECT
+DOMAIN-SUFFIX,gtimg.cn,DIRECT
+DOMAIN-SUFFIX,gtimg.com,DIRECT
+DOMAIN-SUFFIX,tenpay.com,DIRECT
+
+# 美团、点评、外卖、地图：L1.0 未覆盖的 .net / 资源域名。
+DOMAIN-SUFFIX,meituan.net,DIRECT
+DOMAIN-SUFFIX,meituanimg.com,DIRECT
+DOMAIN-SUFFIX,dianping.com,DIRECT
+DOMAIN-SUFFIX,dianpingimg.com,DIRECT
+DOMAIN-SUFFIX,ele.me,DIRECT
+DOMAIN-SUFFIX,amap.com,DIRECT
+DOMAIN-SUFFIX,autonavi.com,DIRECT
+DOMAIN-SUFFIX,gaode.com,DIRECT
+
+# 淘宝、支付宝的资源与国内云 CDN。
+DOMAIN-SUFFIX,aliyun.com,DIRECT
+DOMAIN-SUFFIX,aliyuncs.com,DIRECT
+DOMAIN-SUFFIX,alipayobjects.com,DIRECT
+DOMAIN-SUFFIX,alicdn.com,DIRECT
+DOMAIN-SUFFIX,tmall.com,DIRECT
+DOMAIN-SUFFIX,tbcache.com,DIRECT
+
+# 字节、抖音、头条的基础资源和常见 SDK。
+# 这里仅做路由直连，广告是否拦截由独立广告插件决定。
+DOMAIN-SUFFIX,toutiao.com,DIRECT
+DOMAIN-SUFFIX,snssdk.com,DIRECT
+DOMAIN-SUFFIX,pstatp.com,DIRECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,DIRECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com,DIRECT
+DOMAIN-SUFFIX,byteimg.com,DIRECT
+DOMAIN-SUFFIX,ibytedtos.com,DIRECT
+DOMAIN-SUFFIX,bytedance.com,DIRECT
+DOMAIN-SUFFIX,douyinpic.com,DIRECT
+
+# 国内视频、社区和静态资源。
+DOMAIN-SUFFIX,iqiyi.com,DIRECT
+DOMAIN-SUFFIX,qiyi.com,DIRECT
+DOMAIN-SUFFIX,youku.com,DIRECT
+DOMAIN-SUFFIX,ykimg.com,DIRECT
+DOMAIN-SUFFIX,mgtv.com,DIRECT
+DOMAIN-SUFFIX,kuaishou.com,DIRECT
+DOMAIN-SUFFIX,kwaicdn.com,DIRECT
+DOMAIN-SUFFIX,xhscdn.com,DIRECT
+DOMAIN-SUFFIX,zhihu.com,DIRECT
+DOMAIN-SUFFIX,zhimg.com,DIRECT
+DOMAIN-SUFFIX,weibo.com,DIRECT
+DOMAIN-SUFFIX,sinaimg.cn,DIRECT
+DOMAIN-SUFFIX,bilivideo.com,DIRECT
+DOMAIN-SUFFIX,hdslb.com,DIRECT
